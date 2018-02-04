@@ -80,6 +80,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 console.log((0, _lib.square)(11));
 console.log((0, _lib.diag)(4, 3));
+console.log((0, _lib.plusSevenTimesTwo)(3));
+console.log(timesTwo(3));
 
 document.body.innerHTML = _header2.default;
 
@@ -107,12 +109,27 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.square = square;
 exports.diag = diag;
+exports.plusSevenTimesTwo = plusSevenTimesTwo;
 var sqrt = exports.sqrt = Math.sqrt;
 function square(x) {
   return x * x;
 }
 function diag(x, y) {
   return sqrt(square(x) + square(y));
+}
+
+function plusSeven(x) {
+  return x + 7;
+}
+
+function timesTwo(x) {
+  return x * 2;
+}
+
+function plusSevenTimesTwo(x) {
+  x = plusSeven(x);
+  x = timesTwo(x);
+  return x;
 }
 
 /***/ })

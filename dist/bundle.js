@@ -105,13 +105,13 @@ exports.default = "\n<header>\n\t<h1>My first Webpack!</h1>\n\t<p>This is great.
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.squaree = squaree;
-exports.diaga = diaga;
+exports.square = square;
+exports.diag = diag;
 var sqrt = exports.sqrt = Math.sqrt;
-function squaree(x) {
+function square(x) {
   return x * x;
 }
-function diaga(x, y) {
+function diag(x, y) {
   return sqrt(square(x) + square(y));
 }
 

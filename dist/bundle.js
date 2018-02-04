@@ -105,15 +105,16 @@ exports.default = "\n<header>\n\t<h1>My first Webpack!</h1>\n\t<p>This is great.
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.square = square;
-exports.diag = diag;
+exports.squaree = squaree;
+exports.diaga = diaga;
 var sqrt = exports.sqrt = Math.sqrt;
-function square(x) {
+function squaree(x) {
   return x * x;
 }
-function diag(x, y) {
+function diaga(x, y) {
   return sqrt(square(x) + square(y));
 }
 
 /***/ })
 /******/ ]);
+//# sourceMappingURL=bundle.js.map

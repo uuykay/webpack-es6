@@ -1,7 +1,7 @@
 export const sqrt = Math.sqrt;
-export function square(x) {
+export function squaree(x) {
   return x * x;
 }
-export function diag(x, y) {
+export function diaga(x, y) {
   return sqrt(square(x) + square(y));
 }

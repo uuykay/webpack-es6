@@ -74,7 +74,12 @@ var _header = __webpack_require__(1);
 
 var _header2 = _interopRequireDefault(_header);
 
+var _lib = __webpack_require__(2);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+console.log((0, _lib.square)(11));
+console.log((0, _lib.diag)(4, 3));
 
 document.body.innerHTML = _header2.default;
 
@@ -88,7 +93,27 @@ document.body.innerHTML = _header2.default;
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-exports.default = "\n<header>\n\t<h1>My first Webpack!</h1>\n</header>\n";
+exports.default = "\n<header>\n\t<h1>My first Webpack!</h1>\n\t<p>This is great.</p>\n</header>\n";
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.square = square;
+exports.diag = diag;
+var sqrt = exports.sqrt = Math.sqrt;
+function square(x) {
+  return x * x;
+}
+function diag(x, y) {
+  return sqrt(square(x) + square(y));
+}
 
 /***/ })
 /******/ ]);

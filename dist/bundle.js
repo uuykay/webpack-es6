@@ -81,7 +81,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 console.log((0, _lib.square)(11));
 console.log((0, _lib.diag)(4, 3));
 console.log((0, _lib.plusSevenTimesTwo)(3));
-console.log(timesTwo(3));
 
 document.body.innerHTML = _header2.default;
 
